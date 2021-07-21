@@ -1,0 +1,421 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?tomleg");
+  src: url("../fonts/icomoon.eot?tomleg#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?tomleg") format("truetype"),
+    url("../fonts/icomoon.woff?tomleg") format("woff"),
+    url("../fonts/icomoon.svg?tomleg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+.w {
+  width: 100%;
+}
+body {
+  min-width: 320px;
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 14px;
+  font-family: -apple-system, Helvetica, sans-serif;
+  color: #666;
+  background-color: rgb(246, 246, 246);
+  line-height: 1.5;
+}
+
+/* header开始 */
+header {
+  /* display: none; */
+  height: 45px;
+}
+/* %必须是上一级尺寸，不能跨级 */
+header ul li {
+  float: left;
+  height: 45px;
+  line-height: 45px;
+  background-color: #333;
+  text-align: center;
+}
+header ul li:nth-child(1) {
+  width: 8%;
+}
+header ul li:nth-child(1) img {
+  vertical-align: middle;
+  cursor: pointer;
+  width: 10px;
+}
+header ul li:nth-child(2) {
+  width: 10%;
+}
+header ul li:nth-child(2) img {
+  vertical-align: middle;
+  width: 30px;
+}
+header ul li:nth-child(3) {
+  width: 57%;
+  color: #fff;
+}
+header ul li:nth-child(4) {
+  width: 25%;
+  color: #fff;
+
+  background-color: #f63515;
+}
+header ul li:nth-child(4) a {
+  color: #fff;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/* header结束 */
+
+/* top开始 */
+.top {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  height: 44px;
+  background-color: rgb(200, 37, 25);
+  z-index: 1;
+}
+.top div:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 100%;
+}
+.top div:nth-child(2) {
+  position: relative;
+  /* width: calc(100% - 100px); */
+  /* margin-left: 50px; */
+  height: 30px;
+  margin: 7px 50px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+.top div:nth-child(3) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 100%;
+}
+.top div:nth-child(1) a {
+  margin-top: 14px;
+  margin-left: 15px;
+  display: block;
+  width: 20px;
+  height: 18px;
+}
+.top div:nth-child(1) a img {
+  width: 100%;
+}
+.top div:nth-child(2) .jd {
+  position: absolute;
+  width: 20px;
+  height: 15px;
+  margin-top: 7px;
+  margin-left: 10px;
+  background: url(../images/jd.png);
+  background-size: 100% 100%;
+}
+.top div:nth-child(2)::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 35px;
+  width: 1px;
+  height: 22px;
+  background-color: #666;
+}
+.top div:nth-child(2) .glass {
+  position: absolute;
+  top: 7px;
+  left: 40px;
+  display: block;
+  width: 18px;
+  height: 15px;
+  background: url(../images/jd-sprites.png) no-repeat -83px 0px;
+  background-size: 200px;
+}
+.top div:nth-child(2) input {
+  width: calc(100% - 70px);
+  border-radius: 0 15px 15px 0;
+  margin-left: 60px;
+  margin-right: 0;
+  border: none;
+  outline: none;
+  height: 100%;
+}
+.top div:nth-child(3) a {
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  line-height: 44px;
+  color: white;
+}
+/* top结束 */
+
+/* focus开始 */
+.focus .back {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(../images/background.png) no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+}
+.focus .back a {
+  display: inline-block;
+}
+.focus .back a img {
+  /* visibility: hidden; */
+  border-radius: 10px;
+  margin: 10px 0;
+  width: 95%;
+}
+.focus .back ul {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -50px;
+  width: 100px;
+  height: 20px;
+}
+.focus .back ul li {
+  line-height: 20px;
+  float: left;
+  margin: 5px 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+}
+.focus .back ul li:nth-child(1) {
+  background-color: rgb(250, 44, 25);
+}
+/* focus结束 */
+
+/* pinpai开始 */
+.pinpai div {
+  float: left;
+  width: 33.33%;
+}
+.pinpai div a img {
+  width: 100%;
+  height: 100%;
+}
+/* pinpai结束 */
+
+/* nav开始 */
+
+nav a {
+  float: left;
+  width: 20%;
+  text-align: center;
+  margin-top: 10px;
+  color: #666;
+}
+nav a img {
+  width: 40%;
+}
+nav ul {
+  float: left;
+  margin-left: calc(50% - 14px);
+  margin-top: 10px;
+  height: 10px;
+}
+nav ul li {
+  float: left;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(187, 180, 180);
+  border-radius: 5px;
+  margin: 0 2px;
+  cursor: pointer;
+}
+nav ul li:first-child {
+  background-color: rgb(250, 44, 25);
+}
+/* nav结束 */
+
+/* floor1开始 */
+.floor1 {
+  overflow: hidden;
+  margin: 0 auto 10px;
+  width: 95%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.floor1 h4 {
+  white-space: nowrap;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  margin-top: 10px;
+}
+.floor1 ul li {
+  float: left;
+  font-size: 16px;
+  color: #000;
+  text-align: center;
+  width: 25%;
+}
+.floor1 ul li img {
+  width: 100%;
+}
+/* floor1结束 */
+
+/* floor2开始 */
+.floor2 ul li {
+  text-align: left;
+  width: 22.5%;
+  margin-left: 2%;
+  margin-bottom: 5px;
+}
+.floor2 ul li img {
+  width: 80%;
+  margin-left: 10%;
+}
+.floor2 ul li h4 {
+  white-space: nowrap;
+  text-align: left;
+}
+.floor2 ul li p {
+  white-space: nowrap;
+  font-size: 14px;
+  color: #666;
+}
+/* floor2结束 */
+
+/* ad开始 */
+.ad img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+/* ad结束 */
+
+/* goods开始 */
+.goods ul li {
+  float: left;
+  width: 47%;
+  margin-left: 2%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.goods ul li a {
+  display: block;
+  width: 100%;
+}
+.goods ul li img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.goods ul li p {
+  font-size: 13px;
+  margin: 0 4px;
+  color: #000;
+  /* 多行文字超出省略号显示 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.goods ul li p::before {
+  display: inline-block;
+  content: "";
+  width: 52px;
+  height: 13px;
+  background: url(../upload/超市.png) no-repeat;
+  background-size: 100% 100%;
+  margin-right: 5px;
+}
+.goods ul li .value {
+  float: left;
+  color: #f63515;
+  margin-top: 5px;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.goods ul li .shangou {
+  float: left;
+  font-size: 12px;
+  border: 1px #f63515 solid;
+  margin-top: 8px;
+  margin-left: 5px;
+  line-height: 15px;
+  border-radius: 3px;
+  color: #f63515;
+}
+.goods ul li .similar {
+  float: right;
+  border-radius: 10px;
+  margin-top: 5px;
+  font-size: 12px;
+  padding: 0 10px;
+  margin-bottom: 30px;
+
+  color: rgb(128, 128, 128);
+  background-color: rgb(240, 242, 245);
+}
+.goods ul li:last-child {
+  margin-bottom: 100px;
+}
+/* goods结束 */
+
+/* footer开始 */
+footer {
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  max-width: 640px;
+  min-width: 320px;
+  box-shadow: 0 -0.5px 3px 0px rgb(151, 151, 151);
+  background-color: #fff;
+}
+footer ul li {
+  float: left;
+  line-height: 50px;
+  text-align: center;
+  width: 20%;
+}
+footer ul li img {
+  width: 80%;
+}
+/* footer结束 */
+
+aside {
+  font-family: "icomoon";
+  text-align: center;
+  position: fixed;
+  top: 80%;
+  right: 3%;
+  width: 38px;
+  height: 38px;
+  border-radius: 19px;
+  background-color: rgba(248, 248, 250, 0.8);
+}
+aside a {
+  position: relative;
+  line-height: 38px;
+  font-size: 18px;
+  color: rgba(141, 141, 148, 0.8);
+}
+aside a::before {
+  content: "";
+  top: 0;
+  left: 50%;
+  margin-left: -8.5px;
+  position: absolute;
+  display: block;
+  width: 17px;
+  height: 2px;
+  background-color: rgba(141, 141, 148, 0.8);
+}
